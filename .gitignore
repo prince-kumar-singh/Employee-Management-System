@@ -128,3 +128,22 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# macOS specific files
+.DS_*
+
+# Additional log files
+*.log
+logs
+
+# Backup files
+**/*.backup.*
+**/*.back.*
+
+# Editor-specific files
+*.sublime*
+
+# Design files
+psd
+thumb
+sketch
