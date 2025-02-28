@@ -9,9 +9,6 @@ const App = () => {
   const [loggedInUserData, setLoggedInUserData] = useState(null)
 
   const AuthData = useContext(AuthContext);
-  if (AuthData) {
-    console.log();
-  }
 
   // useEffect(() => {
   //   if (AuthData) {
