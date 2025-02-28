@@ -1,6 +1,7 @@
-const employees = [ 
+const employees = [  
     {
         "id": 1,
+        "firstName": "Aarav",
         "email": "employee1@example.com",
         "password": "123",
         "tasks": [
@@ -24,10 +25,17 @@ const employees = [
                 "completedTask": false,
                 "failed": false
             }
-        ]
+        ],
+        "taskCount": {
+            "active": 2,
+            "newTask": 1,
+            "completedTask": 0,
+            "failed": 0
+        }
     },
     {
         "id": 2,
+        "firstName": "Vihaan",
         "email": "employee2@example.com",
         "password": "123",
         "tasks": [
@@ -51,10 +59,17 @@ const employees = [
                 "completedTask": false,
                 "failed": false
             }
-        ]
+        ],
+        "taskCount": {
+            "active": 1,
+            "newTask": 1,
+            "completedTask": 1,
+            "failed": 0
+        }
     },
     {
         "id": 3,
+        "firstName": "Ishaan",
         "email": "employee3@example.com",
         "password": "123",
         "tasks": [
@@ -78,10 +93,17 @@ const employees = [
                 "completedTask": true,
                 "failed": false
             }
-        ]
+        ],
+        "taskCount": {
+            "active": 1,
+            "newTask": 1,
+            "completedTask": 1,
+            "failed": 0
+        }
     },
     {
         "id": 4,
+        "firstName": "Reyansh",
         "email": "employee4@example.com",
         "password": "123",
         "tasks": [
@@ -105,10 +127,17 @@ const employees = [
                 "completedTask": false,
                 "failed": false
             }
-        ]
+        ],
+        "taskCount": {
+            "active": 2,
+            "newTask": 1,
+            "completedTask": 0,
+            "failed": 1
+        }
     },
     {
         "id": 5,
+        "firstName": "Kabir",
         "email": "employee5@example.com",
         "password": "123",
         "tasks": [
@@ -132,7 +161,13 @@ const employees = [
                 "completedTask": false,
                 "failed": false
             }
-        ]
+        ],
+        "taskCount": {
+            "active": 1,
+            "newTask": 1,
+            "completedTask": 1,
+            "failed": 0
+        }
     }
 ];
 
