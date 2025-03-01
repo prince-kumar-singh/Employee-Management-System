@@ -6,7 +6,7 @@ import CompleteTask from './CompleteTask'
 import FailedTask from './FailedTask'
 
 const TaskList = ({ data }) => {
-  console.log(data)
+  // console.log(data)
   return (
     <div id='tasklist' className='h-[55%] overflow-x-auto flex items-center justify-start gap-5 flex-nowrap w-full py-5 mt-10'>
       {data.tasks && data.tasks.map((elem, index) => {
