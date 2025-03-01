@@ -1,4 +1,4 @@
-const employees = [  
+const employees = [   
     {
         "id": 1,
         "firstName": "Aarav",
@@ -13,7 +13,7 @@ const employees = [
         "tasks": [
             {
                 "taskTitle": "Complete Report",
-                "taskDescription": "Prepare the monthly sales report.",
+                "taskDescription": "Gather sales data, analyze key metrics, format insights, and finalize the report.",
                 "taskDate": "2025-02-23",
                 "category": "Reports",
                 "active": true,
@@ -23,7 +23,7 @@ const employees = [
             },
             {
                 "taskTitle": "Team Meeting",
-                "taskDescription": "Attend the weekly team meeting.",
+                "taskDescription": "Prepare an agenda, present progress updates, discuss challenges, and document decisions.",
                 "taskDate": "2025-02-24",
                 "category": "Meetings",
                 "active": true,
@@ -47,7 +47,7 @@ const employees = [
         "tasks": [
             {
                 "taskTitle": "Fix Bugs",
-                "taskDescription": "Resolve issues reported by QA.",
+                "taskDescription": "Identify reported issues, debug and modify code, test for correctness, and document the fixes.",
                 "taskDate": "2025-02-22",
                 "category": "Development",
                 "active": false,
@@ -57,7 +57,7 @@ const employees = [
             },
             {
                 "taskTitle": "Deploy Update",
-                "taskDescription": "Push the latest update to production.",
+                "taskDescription": "Review code changes, prepare deployment scripts, execute deployment, and verify system stability.",
                 "taskDate": "2025-02-25",
                 "category": "Deployment",
                 "active": true,
@@ -81,7 +81,7 @@ const employees = [
         "tasks": [
             {
                 "taskTitle": "Client Meeting",
-                "taskDescription": "Discuss project requirements.",
+                "taskDescription": "Schedule the meeting, prepare documents, discuss project details, and summarize key points.",
                 "taskDate": "2025-02-26",
                 "category": "Client Management",
                 "active": true,
@@ -91,7 +91,7 @@ const employees = [
             },
             {
                 "taskTitle": "Draft Proposal",
-                "taskDescription": "Write a business proposal for new clients.",
+                "taskDescription": "Outline project goals, define scope, estimate costs, and structure the final document.",
                 "taskDate": "2025-02-27",
                 "category": "Documentation",
                 "active": false,
@@ -115,7 +115,7 @@ const employees = [
         "tasks": [
             {
                 "taskTitle": "System Upgrade",
-                "taskDescription": "Upgrade server software to latest version.",
+                "taskDescription": "Back up system data, install software updates, troubleshoot issues, and confirm stability.",
                 "taskDate": "2025-02-28",
                 "category": "IT Maintenance",
                 "active": true,
@@ -125,7 +125,7 @@ const employees = [
             },
             {
                 "taskTitle": "Security Audit",
-                "taskDescription": "Conduct a security audit for the system.",
+                "taskDescription": "Review system logs, identify vulnerabilities, implement security fixes, and generate a report.",
                 "taskDate": "2025-03-01",
                 "category": "Security",
                 "active": true,
@@ -149,7 +149,7 @@ const employees = [
         "tasks": [
             {
                 "taskTitle": "Content Creation",
-                "taskDescription": "Write blog articles for marketing.",
+                "taskDescription": "Research topics, create structured drafts, refine content, and finalize for publishing.",
                 "taskDate": "2025-03-02",
                 "category": "Marketing",
                 "active": false,
@@ -159,7 +159,7 @@ const employees = [
             },
             {
                 "taskTitle": "Social Media Campaign",
-                "taskDescription": "Launch a new social media campaign.",
+                "taskDescription": "Develop campaign strategy, design engaging content, schedule posts, and monitor performance.",
                 "taskDate": "2025-03-03",
                 "category": "Marketing",
                 "active": true,
@@ -170,6 +170,7 @@ const employees = [
         ]
     }
 ];
+
 
 
 const admin = [
