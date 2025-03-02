@@ -15,7 +15,6 @@ const CreateTask = () => {
       taskTitle,
       taskDescription,
       taskDate,
-      taskAssignTo,
       taskCategory,
       active: false,
       newTask: true,
@@ -24,9 +23,7 @@ const CreateTask = () => {
     });
   };
 
-  useEffect(() => {
-    console.log(task)
-  }, [task]);
+  
 
   return (
     <div className="p-5 bg-[#1c1c1c] mt-5 rounded">
