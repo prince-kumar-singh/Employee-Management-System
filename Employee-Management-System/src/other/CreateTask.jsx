@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const CreateTask = () => {
   const [taskTitle, setTaskTitle] = useState('');
@@ -6,24 +6,39 @@ const CreateTask = () => {
   const [taskDate, setTaskDate] = useState('');
   const [taskAssignTo, setTaskAssignTo] = useState('');
   const [taskCategory, setTaskCategory] = useState('');
+  
 
-  const [task, setTask] = useState({});
 
   const submitHandler = (e) => {
     e.preventDefault();
-    setTask({
+    const newTask= ({
       taskTitle,
       taskDescription,
       taskDate,
+      taskAssignTo,
       taskCategory,
       active: false,
       newTask: true,
       completed: false,
-      failed: true,
+      failed: false,
     });
-  };
 
-  
+    //console.log('Task created:', newTask);
+    //console.log('Task created:', newTask);
+
+    const data = JSON.parse(localStorage.getItem('employees'));
+    if (data) {
+      data.forEach((elem) => {
+        if (taskAssignTo === elem.firstName) {
+          if (!elem.tasks) {
+            elem.tasks = [];
+          }
+          elem.tasks.push(newTask);
+          console.log(elem)
+        }
+      });
+    }
+  };
 
   return (
     <div className="p-5 bg-[#1c1c1c] mt-5 rounded">
