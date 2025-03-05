@@ -1,27 +1,35 @@
-import React, { useState } from 'react';
-
+import React, { useState, useContext } from 'react';
+import { AuthContext } from '../context/AuthProvider';
 const CreateTask = () => {
   const [taskTitle, setTaskTitle] = useState('');
   const [taskDescription, setTaskDescription] = useState('');
   const [taskDate, setTaskDate] = useState('');
   const [taskAssignTo, setTaskAssignTo] = useState('');
-  const [taskCategory, setTaskCategory] = useState('');
-  
+  const [category, setcategory] = useState('');
+  const { userData, setUserData } = useContext(AuthContext);
 
 
   const submitHandler = (e) => {
     e.preventDefault();
-    const newTask= ({
+    const newTask = {
       taskTitle,
       taskDescription,
       taskDate,
       taskAssignTo,
-      taskCategory,
+      category,
       active: false,
       newTask: true,
       completed: false,
       failed: false,
-    });
+    };
+
+    // Clear input fields
+    setTaskTitle('');
+    setTaskDescription('');
+    setTaskDate('');
+    setTaskAssignTo('');
+    setcategory('');
+    
 
     //console.log('Task created:', newTask);
     //console.log('Task created:', newTask);
@@ -35,9 +43,14 @@ const CreateTask = () => {
           }
           elem.tasks.push(newTask);
           console.log(elem)
+          elem.taskCount.newTask= elem.taskCount.newTask+1
         }
       });
+      localStorage.setItem('employees', JSON.stringify(data));
+      setUserData({ ...userData, employees: data });
     }
+
+    
   };
 
   return (
@@ -81,8 +94,8 @@ const CreateTask = () => {
           <div>
             <h3 className="text-sm text-gray-300 mb-0.5">Category</h3>
             <input
-              value={taskCategory}
-              onChange={(e) => setTaskCategory(e.target.value)}
+              value={category}
+              onChange={(e) => setcategory(e.target.value)}
               className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
               type="text"
               placeholder="design, dev etc"
