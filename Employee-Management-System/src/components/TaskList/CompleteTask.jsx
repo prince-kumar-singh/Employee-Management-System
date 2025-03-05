@@ -10,7 +10,7 @@ const CompleteTask = ({data}) => {
         <h2 className='mt-5 text-2xl font-semibold'>{data.taskTitle}</h2>
         <p className='text-sm mt-2'>{data.taskDescription}</p>
         <div className='mt-2'>
-            <button className='bg-green-500 rounded w-full'>Complete</button>
+            <button className='bg-green-500 py-1 rounded w-full'>Complete</button>
         </div>
     </div>
   )
