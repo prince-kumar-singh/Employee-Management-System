@@ -10,6 +10,13 @@ This `README.md` file provides an overview of the project, its features, technol
 - **Employee Dashboard**: Allows employees to view their tasks and update their status.
 - **Task Management**: Create, view, and update tasks with different statuses (new, active, completed, failed).
 - **Authentication**: Simple login system for admin and employees.
+- **Authorization**: Role-based access control for admin and employees.
+- **Responsive Design**: Mobile-friendly interface.
+- **Notifications**: Real-time notifications for task updates.
+- **Search Functionality**: Search tasks by keywords.
+- **Filter Tasks**: Filter tasks based on status and priority.
+- **User Profile**: View and update user profile information.
+- **Analytics**: Dashboard analytics for task management.
 
 ## Technologies Used
 
@@ -21,8 +28,24 @@ This `README.md` file provides an overview of the project, its features, technol
 ## Getting Started
 
 ### Prerequisites
+### How to Run the Code Base
+
+1. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open your browser and navigate to `http://localhost:5173` to see the application running.
+
+### Prerequisites
 
 - Node.js (version 14 or higher)
+- npm (version 6 or higher)
 - npm (version 6 or higher)
 
 ### Installation
