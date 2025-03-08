@@ -13,7 +13,7 @@ function Header(props) {
       <div className='text-2xl font-medium'>
         Hello <br /> 
         <span className='text-3xl font-semibold'>
-          username 👋
+        {props.data.firstName || 'Guest'}👋
         </span>
       </div>
       <button onClick={logOutUser} className='bg-red-600 text-lg font-medium text-white px-5 py-2 rounded-sm'>
