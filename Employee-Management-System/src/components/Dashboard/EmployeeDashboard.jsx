@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Header from '../../other/header'
+import Header from '../../other/Header'
 import TaskListNumber from '../../other/TaskListNumber'
 import TaskList from '../TaskList/TaskList'
 
