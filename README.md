@@ -33,7 +33,7 @@ The Employee Management System is designed to help organizations streamline empl
 
 ## 🏗️ Project Structure
 
-\`\`\`
+```
 Employee-Management-System/
 ├── public/
 │   └── vite.svg
@@ -56,7 +56,8 @@ Employee-Management-System/
 ├── package.json
 ├── vite.config.js
 └── README.md
-\`\`\`
+```
+
 
 ---
 
@@ -67,7 +68,7 @@ To set up the project locally:
 1️⃣ **Clone the repository:**
 
 \`\`\`bash
-git clone https://github.com/yourusername/employee-management-system.git
+git clone https://github.com/prince-kumar-singh/Employee-Management-System.git
 cd employee-management-system
 \`\`\`
 
