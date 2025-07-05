@@ -67,16 +67,16 @@ To set up the project locally:
 
 1️⃣ **Clone the repository:**
 
-\`\`\`bash
+```bash
 git clone https://github.com/prince-kumar-singh/Employee-Management-System.git
 cd employee-management-system
-\`\`\`
+```
 
 2️⃣ **Install dependencies:**
 
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 ---
 
@@ -84,15 +84,15 @@ npm install
 
 Start the development server:
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 This will launch the app at:
 
-\`\`\`
+```
 http://localhost:5173
-\`\`\`
+```
 
 ---
 
@@ -100,9 +100,9 @@ http://localhost:5173
 
 Generate an optimized production build:
 
-\`\`\`bash
+```bash
 npm run build
-\`\`\`
+```
 
 The output files will be generated in the \`dist\` directory.
 
