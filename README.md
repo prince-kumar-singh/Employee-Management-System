@@ -106,15 +106,3 @@ npm run build
 
 The output files will be generated in the \`dist\` directory.
 
----
-
-## 🧪 Testing
-
-> **Note:** Automated testing is not yet implemented in this version.
->
-> Future improvements may include:
-> - Unit tests (Jest)
-> - Component tests (React Testing Library)
-> - End-to-end tests (Cypress)
-
----
