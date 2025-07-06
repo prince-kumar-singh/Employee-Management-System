@@ -95,14 +95,24 @@ http://localhost:5173
 ```
 
 ---
+---
 
-## 🛠️ Build for Production
+## 🔐 Authentication Details
 
-Generate an optimized production build:
+This project uses **local storage-based authentication** with hardcoded credentials for demonstration purposes.
 
-```bash
-npm run build
-```
+### ✅ Default Credentials
 
-The output files will be generated in the \`dist\` directory.
+| Role        | Email                   | Password |
+|-------------|-------------------------|----------|
+| **Admin**   | admin@me.com            | 123      |
+| **Employee 1** | employee1@example.com | 123      |
+| **Employee 2** | employee2@example.com | 123      |
+| **Employee 3** | employee3@example.com | 123      |
+| **Employee 4** | employee4@example.com | 123      |
+| **Employee 5** | employee5@example.com | 123      |
 
+⚠️ **Important Notes:**
+- These credentials are hardcoded in the frontend and stored/managed via `localStorage`.
+- This authentication method is **not secure** and is intended **only for local testing, learning, or demonstration** purposes.
+- Do **not** use this method in any production environment.
