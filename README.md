@@ -115,4 +115,5 @@ This project uses **local storage-based authentication** with hardcoded credenti
 ⚠️ **Important Notes:**
 - These credentials are hardcoded in the frontend and stored/managed via `localStorage`.
 - This authentication method is **not secure** and is intended **only for local testing, learning, or demonstration** purposes.
-- Do **not** use this method in any production environment.
+
+
